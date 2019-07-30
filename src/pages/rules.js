@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout/'
+import RulesFilter from '../components/rules-filter'
 import SEO from '../components/seo'
 import showdown from 'showdown'
 import {
@@ -14,12 +15,20 @@ export default ({ data }) => {
 	const updatedTitle = `Rules | ${site.siteMetadata.title}`
 	const converter = new showdown.Converter()
 
+
+
+	const searchStuff = (filterValues) => {
+		console.log(filterValues);
+	}
+
 	return (
 		<Layout>
 			<SEO title={updatedTitle} keywords={site.siteMetadata.keywords} />
 			<section className="page-container page-rules">
 				{/* Heading */}
 				<h1>Rules</h1>
+
+				<RulesFilter onFilter={searchStuff}/>
 				{/* Table of rules */}
 				<section className="rules-listing">
 					{rules.edges.map(({ node }) => {
