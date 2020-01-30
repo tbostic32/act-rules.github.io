@@ -2,13 +2,21 @@
 title: Test Cases
 ---
 
-All ACT rules include a number of test cases, which are designed for easy consumption by accessibility test tools and test methodologies. Test cases are updated regularly as part of rule writing. All test cases are described in a JSON file:
+All ACT rules include a number of test cases, which are designed for easy consumption by accessibility test tools and test methodologies. Test cases are updated regularly as part of rule writing.
 
- <a class='btn' href='/testcases.json'>
+All test cases are described in a JSON file, which can be viewed here:
+
+<a class='btn' href='/testcases.json'>
   See the Test Cases JSON
- </a>
+</a>
 
 **Note**: Based on the file extension specified for a test case within the examples code snippet (e.g.: html, svg, xhtml), the corresponding `DOCTYPE`, if applicable, is dynamically added to the generated HTML test case file.
+
+Each test cases extracted to their respective files, along with their assets and made available as a zip, to allow for implementers to get easy access to the test cases. The zip file can be downladed below:
+
+<a class='btn' href='/testcases.zip'>
+  Download Testcases & Assets
+</a>
 
 ## Test Case Format
 
